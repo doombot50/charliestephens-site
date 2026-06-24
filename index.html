@@ -15,13 +15,11 @@
   a{transition:transform .15s ease, opacity .15s ease, box-shadow .15s ease;}
   .wrap{max-width:1080px;margin:0 auto;padding:0 28px;}
   .card-hover:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(0,0,0,0.16);}
-  .note-hover:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,0.08);}
   .pill-hover:hover{transform:translateY(-2px);}
   @media (max-width:760px){
     .hero-h1{font-size:54px !important;}
     .proj-row{flex-direction:column !important;}
     .proj-shot{width:100% !important;height:120px !important;}
-    .notes-grid{grid-template-columns:1fr !important;}
     .nav-links{display:none !important;}
     .footer-row{flex-direction:column !important;align-items:flex-start !important;}
   }
@@ -37,7 +35,6 @@
     </a>
     <div class="nav-links" style="display:flex;gap:6px;font-size:14px;font-weight:600;">
       <a href="#projects" style="padding:7px 14px;border-radius:30px;text-decoration:none;color:inherit;">Projects</a>
-      <a href="#notes" style="padding:7px 14px;border-radius:30px;text-decoration:none;color:inherit;">Notes</a>
       <a href="#about" style="padding:7px 14px;border-radius:30px;text-decoration:none;color:inherit;">About</a>
     </div>
   </nav>
@@ -66,34 +63,13 @@
           </p>
           <span style="display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:15px;color:oklch(0.7 0.16 30);background:#fff;padding:11px 20px;border-radius:30px;">finance.charliestephens.xyz →</span>
         </div>
-        <div class="proj-shot" style="width:300px;background:repeating-linear-gradient(135deg,rgba(255,255,255,0.16) 0 11px,rgba(255,255,255,0.06) 11px 22px);display:flex;align-items:center;justify-content:center;">
-          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:rgba(255,255,255,0.75);">[ project screenshot ]</span>
+        <div class="proj-shot" style="width:300px;display:flex;overflow:hidden;background:oklch(0.62 0.15 30);">
+          <img src="la-cf-tool.png" alt="Screenshot of the Louisiana Campaign Finance Dashboard" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:top left;display:block;">
         </div>
       </div>
     </a>
     <div style="margin-top:14px;border:2px dashed #d8cdb8;border-radius:18px;padding:24px 28px;font-size:14.5px;font-weight:600;color:#a99c86;">
       + more projects coming soon
-    </div>
-  </section>
-
-  <section id="notes" style="padding:50px 0 30px;scroll-margin-top:24px;">
-    <h2 style="font-size:15px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#9a8f7d;margin:0 0 22px;">Notes</h2>
-    <div class="notes-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
-      <a class="note-hover" href="#" style="text-decoration:none;color:inherit;background:#fff;border-radius:16px;padding:26px;">
-        <span style="font-size:12.5px;font-weight:600;color:oklch(0.6 0.15 250);">JUN 2026</span>
-        <div style="font-weight:700;font-size:20px;line-height:1.25;margin-top:10px;">Why I built the LA CF Tool</div>
-      </a>
-      <a class="note-hover" href="#" style="text-decoration:none;color:inherit;background:#fff;border-radius:16px;padding:26px;">
-        <span style="font-size:12.5px;font-weight:600;color:oklch(0.6 0.15 250);">MAY 2026</span>
-        <div style="font-weight:700;font-size:20px;line-height:1.25;margin-top:10px;">Scraping public records without losing your mind</div>
-      </a>
-      <a class="note-hover" href="#" style="text-decoration:none;color:inherit;background:#fff;border-radius:16px;padding:26px;">
-        <span style="font-size:12.5px;font-weight:600;color:oklch(0.6 0.15 250);">APR 2026</span>
-        <div style="font-weight:700;font-size:20px;line-height:1.25;margin-top:10px;">A site with no framework, on purpose</div>
-      </a>
-      <a class="note-hover" href="#" style="text-decoration:none;color:inherit;background:#1A1714;border-radius:16px;padding:26px;display:flex;align-items:flex-end;">
-        <div style="font-weight:600;font-size:16px;color:#F7F2E7;">Read all notes →</div>
-      </a>
     </div>
   </section>
 
